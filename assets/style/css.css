@@ -1,0 +1,112 @@
+.navbar{
+  position: fixed;
+  width: 100%;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  z-index: 10;
+  margin-top: 20px;
+}
+.nav-content a {
+  display: inline-block;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 16px;
+  letter-spacing: 2px;
+  color: #3a2a1f;
+  cursor: pointer;
+  transition: transform 0.3s ease, letter-spacing 0.3s ease;
+  margin-right: 30px;
+  text-decoration: none;
+  list-style: none;
+}
+
+.nav-content a:hover {
+  transform: scale(1.1); /* ⬅️ ini yang benar */
+  letter-spacing: 4px;
+}
+        body{
+
+background-image: url("../img/981.jpg");
+background-size: cover;
+background-position: center;
+background-attachment: fixed;
+
+font-family: Arial;
+margin: 0;
+
+display: flex;
+justify-content: center;
+align-items: center;
+
+height: 100vh;
+
+}
+
+.container{
+
+width: 700px;
+
+background: white;
+
+padding: 30px;
+
+border-radius: 10px;
+
+border: 2px;
+
+box-shadow: 0px 0px 25px rgba(0,0,0,0.6);
+
+text-align: center;
+
+background-image: url(../img/Paper.jpg);
+ 
+background-size: cover;      
+    
+background-position: center; 
+   
+background-repeat: no-repeat;
+
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeUp 0.8s ease forwards;
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+h1{
+
+color: rgb(0, 0, 0);
+
+}
+
+h2{
+
+color: rgb(127, 91, 0);
+
+}
+
+p{
+
+text-align: justify;
+
+line-height: 1.6;
+
+}
+
+.foto{
+
+width: 200px;
+
+border-radius: 10px;
+
+box-shadow: 0px 0px 15px black;
+
+margin-bottom: 20px;
+
+}
