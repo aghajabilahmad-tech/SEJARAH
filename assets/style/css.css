@@ -1,72 +1,92 @@
-.navbar{
+.navbar {
   position: fixed;
-  width: 100%;
-  top: 0;
-  display: flex;
-  justify-content: center;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(12px);
+
+  padding: 15px 30px; 
+  border-radius: 60px;
+
   z-index: 10;
-  margin-top: 20px;
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  
 }
-.nav-content a {
-  display: inline-block;
-  text-align: center;
-  padding: 10px 0;
-  font-size: 16px;
-  letter-spacing: 2px;
-  color: #3a2a1f;
-  cursor: pointer;
-  transition: transform 0.3s ease, letter-spacing 0.3s ease;
-  margin-right: 30px;
-  text-decoration: none;
+.navbar.hide {
+  opacity: 0;
+  transform: translateY(-20px);
+}
+
+.nav-content ul {
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-content li {
   list-style: none;
 }
 
-.nav-content a:hover {
-  transform: scale(1.1); /* ⬅️ ini yang benar */
-  letter-spacing: 4px;
+.nav-content a {
+  color: white;
+  text-decoration: none;
+
+  font-size: 16px; 
+  font-weight: 500;
+
+  padding: 8px 15px;
+  border-radius: 30px;
+
+  transition: 0.3s;
 }
-        body{
+.nav-content a:active {
+  opacity: 0.3;
+  transform: scale(0.95);
+}
 
-background-image: url("../img/981.jpg");
-background-size: cover;
-background-position: center;
-background-attachment: fixed;
+.nav-content a:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: scale(1.05);
+}
 
-font-family: Arial;
-margin: 0;
 
-display: flex;
-justify-content: center;
-align-items: center;
 
-height: 100vh;
+ body{
+  
+  background-image: url("../img/981.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+
+  font-family: Arial;
+  margin: 0;
+
+  display: block; 
+  padding-top: 120px;
+  
+  min-height: 100vh; 
+  padding-top: 100px;
+  
 
 }
 
 .container{
 
 width: 700px;
-
+margin: 30px auto; 
 background: white;
-
 padding: 30px;
-
 border-radius: 10px;
-
 border: 2px;
-
 box-shadow: 0px 0px 25px rgba(0,0,0,0.6);
-
 text-align: center;
-
 background-image: url(../img/Paper.jpg);
- 
-background-size: cover;      
-    
+background-size: cover;       
 background-position: center; 
-   
 background-repeat: no-repeat;
-
   opacity: 0;
   transform: translateY(30px);
   animation: fadeUp 0.8s ease forwards;
@@ -109,4 +129,37 @@ box-shadow: 0px 0px 15px black;
 
 margin-bottom: 20px;
 
+}
+.footer {
+  background: #FDF5E6;
+  text-align: center;
+  padding: 9px;
+
+  margin-top: 50px;
+
+  border-top: 2px solid #ddd; 
+  box-shadow: 0 -5px 15px rgba(0,0,0,0.1);
+
+  font-size: 14px;
+  
+}
+.footer a {
+  color: #333;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+#crafted-by{
+  margin: 10px auto; 
+  font-weight: 600;
+  letter-spacing: 1px;
+  display: block; 
+}
+#copyright{
+  margin: 10px auto; 
+  font-weight: 600;
+  letter-spacing: 1px;
+  display: block; 
 }
